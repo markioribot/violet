@@ -1,0 +1,116 @@
+<%- include('header'); -%>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+        <link rel="stylesheet" href="/index.css">
+        <title><%= bot.name %></title>    
+    </head>
+    <body>
+        <!--HEADER-->
+        <style>
+        body{
+
+ background:  url("https://1.bp.blogspot.com/-eeVjBQ5epX0/Xx01tox2wvI/AAAAAAAABZQ/ycKVN_-9JlsLHsJsLm6AUz0OmUMwZIy5wCPcBGAYYCw/s1600/wallpaper%2Bmang%25C3%25A1s.jpg")  top left repeat-x, url("https://3.bp.blogspot.com/-3zFLlFtnAdc/Xx01tvNv7XI/AAAAAAAABZU/QEkoT0wA2eo9mAVcqVY23iYH7FdRXuuPQCPcBGAYYCw/s320/bgs.png") repeat; 
+
+
+}
+</style>
+        <!--MAIN BODY-->
+      <section style="margin-bottom: 0;">
+        <div class="d-flex justify-content-center head">
+            <h1 style="font-weight: 900;">
+                <img src="<%= botClient.user.displayAvatarURL({size: 4096}) %>" style="width: 4%;margin-top: -0.5%;"> <span style="font-size: 40px;"><span style="color:#9F30FF;"><%= botClient.user.username %></span> | Bot em Desenvolvimento</span>
+              </h1>
+        </div>
+        <div class="d-flex justify-content-center subtext">
+            <p style="font-style: italic;font-size: 30px;">O melhor bot de música com a melhor e mais alta qualidade que você já usou! (Server Beta)</p>
+        </div>
+      </section>
+      
+      <section  style="margin-top: -15%;">
+
+        <div class="container">
+          <div class="row align-items-center mt-5">
+            <div class="col-md-5 col-lg-6 order-md-1 order-0"><img class="w-100" src="https://i.imgur.com/4wsUNJm.png" alt="" /></div>
+            <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+              <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/850924066517155871.png?v=1" alt="" width="30" />
+                <div class="flex-1">
+                  <h5>Todos os comandos necessários para o seu servidor</h5>
+                  <p class="text-muted mb-4">Você está cansado de ter um Bot de Música com milhares de comandos? Violet tem todos os comandos necessários em apenas um único bot!
+                    <br> Embora eles não vejam "muito", você pode usar nossas estruturas de comando para adicionar um dos<b><%= Object.keys(BotFilters).length %> Filtros!</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row align-items-center mt-5">
+              <div class="col-md-5 col-lg-6 order-md-0 order-1"><img class="w-100" src="https://i.imgur.com/zoOTxsU.png" alt="" /></div>
+              <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+                <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/850924929444610048.png?v=1" alt="" width="30" />
+                  <div class="flex-1">
+                    <h5>Bot em Desenvolvimento, <%= Object.keys(BotFilters).length %> Filtros para ajustar o seu áudio!</h5>
+                    <p class="text-muted mb-4">Estamos usando o FFMPEG, para dar a você a mais alta qualidade de áudio possível! Na verdade, nós os geramos instantaneamente (Lags podem acontecer por Ser um Server em Desenvolvimento)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+          <div class="container">
+            <div class="row align-items-center mt-5">
+              <div class="col-md-5 col-lg-6 order-md-1 order-0"><img class="w-100" src="https://i.imgur.com/wXwAvIi.png" alt="" /></div>
+              <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+                <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/850831345051762719.png?v=1" alt="" width="30" />
+                  <div class="flex-1">
+                    <h5>Spotify, Soundcloud, Youtube, e 1100+ Outros links suportados!</h5>
+                    <p class="text-muted mb-4">Apoiamos tudo o que você ouve!
+INCLUINDO PLAYLISTS E <b>20 PREDEFINIDO, otimizado, PLAYLISTS! (misturar)</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+            <div class="container">
+              <div class="row align-items-center mt-5">
+                <div class="col-md-5 col-lg-6 order-md-0 order-1"><img class="w-100" src="https://i.imgur.com/orpW86s.png" alt="" /></div>
+                <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+                  <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/853006694312574977.png?v=1" alt="" width="30" />
+                    <div class="flex-1">
+                      <h5>Interface limpa, com logs e botões instantâneos!</h5>
+                      <p class="text-muted mb-4">Para que você possa obter tudo o que deseja instantaneamente do Bot.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+    
+    </section>
+      <!-- FOOTER-->
+      <section>
+        <div class="card-footer" style="margin-top:15%;text-align: center;color: #9F30FF;">
+          <hr style="width: 75%;background-color: #FFFFFF!important;color: #FFFFFF!important;border: 5px solid #FFFFFF!important;border-radius:25px;margin-left: 12%;">
+          <h4 style="margin-top:5%;">
+            <img src="<%= botClient.user.displayAvatarURL({size: 4096}) %>" style="width: 4%;margin-top: -0.5%;"> <span style="font-size: 40px;"><%= botClient.user.username %> | Bot em Desenvolvimento</span>
+          </h4>
+         <h5 style="text-align: center;">
+            <a href="https://facebook.com/juanGibsonMark/" target="_blank" style="font-size: 12px; color: #888a9b!important;text-decoration: none;">&copy; Copyright Violet | Todos os direitos reservados.</a><br><br>
+          <a href="https://github.com/Tomato6966/Musicium" target="_blank" style="font-size: 20px; color: #9F30FF!important;text-decoration: none;">Criado Por<code>Tomato#6966</code> | [Github]</a>
+            <a href="https://facebook.com/juanGibsonMark/" target="_blank" style="font-size: 20px; color: #9F30FF!important;text-decoration: none;">Editado Por <code>Markiori#7288</code></a>
+          </h5>
+        </div>
+      </section>
+
+       <!--JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>

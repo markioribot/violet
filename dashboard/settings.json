@@ -1,0 +1,14 @@
+{
+    "website" : {
+      "support": "https://discord.com/invite/H7e8ST6qcE",
+      "domain": "https://violet.juanalvesds.repl.co"
+    },
+    "config": {
+        "http": {
+          "port": 80
+        },
+        "callback": "https://violet.juanalvesds.repl.co/callback",
+        "clientID": "864976703008276489",
+        "secret": "G8XRRHT_NbqHfetVGdj81mAxknjvuCUz"
+    }
+  }
